@@ -20,23 +20,44 @@
 
 
  header {
+     position: relative;
      display: flex;
      justify-content: space-around;
+     ;
+ }
+
+ header.sticky {
+     display: flex;
+     justify-content: space-around;
+     position: fixed;
+     top: 0;
+     background-color: #ffffff;
+     box-shadow: 0 4px 6px #0000000d;
+     width: 100%;
+     z-index: 1000;
  }
 
  .header {
      display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 10px 20px;
+     justify-content: center;
      background-color: #ffffff;
      text-transform: uppercase;
      font-size: 12px;
+     width: 100%;
+ }
+
+ .header>div {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 20px;
      width: 1188px;
  }
-.logo {
-    float: right;
-}
+
+ .logo {
+     float: right;
+ }
+
  .logo img {
      max-height: 50px;
  }
@@ -68,7 +89,7 @@
  }
 
  .nav-list a:hover {
-    color: #F3D721;
+     color: #F3D721;
  }
 
  .nav-list .dropdown:hover>.dropdown-menu {
@@ -499,7 +520,7 @@
 
 
  @media (max-width: 1227px) {
-     .header {
+     .header>div {
          padding: 0 80px;
          height: 80px;
      }
@@ -521,7 +542,7 @@
 
 
      .content1 {
-        padding: 0 80px;
+         padding: 0 80px;
      }
 
 

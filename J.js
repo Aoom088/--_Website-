@@ -11,3 +11,14 @@ function content4_select(button) {
         CSR_content.style.display = "block";
     }
   }
+
+const nav_bar = document.querySelector("Header");
+
+window.onscroll = function nav_bar_fix() {
+   if (window.scrollY > 50) {
+    nav_bar.classList.add("sticky");
+   }else{
+    nav_bar.classList.remove("sticky");
+   }
+   console.log("aaa")
+}
